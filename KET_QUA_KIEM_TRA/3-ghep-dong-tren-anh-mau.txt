@@ -1,0 +1,37 @@
+Kiểm tra thuật toán ghép dòng (lib/ocr/ghep_dong.dart) trên toạ độ chữ THẬT của ảnh mẫu.
+Toạ độ lấy bằng một bộ OCR khác (RapidOCR, không có dấu tiếng Việt) chạy trên máy trợ lý vì ở đây không có Android/ML Kit;
+các khối được xáo trộn thứ tự như ML Kit trả theo khối, rồi ghép bằng đúng hàm Dart của app.
+Mục đích: chứng minh các cột Tên hàng / SL / Đơn giá / Thành tiền được ghép lại đúng hàng; chất lượng chữ (dấu) sẽ do ML Kit quyết định.
+
+===== hoa_don_1.jpg (30 khối)
+DAI LY NUOC GIAI KHAT MINH TAM
+12 Ngo34 Duong Mau, HaNoi ·DT0123 456789
+HOA DON BAN LE (MAU)
+So:000127   Ngay:03/11/2026
+Khachhang:TaphoaCoLan
+Ten hang   SL   Don gia   Thanh tien
+Nuécsuoi500ml (thung24)   96.000   480.000
+Tra xanh 455ml (thung24)   180.000   540.000
+Nuoc ngot lon 330ml (thung)   205.000   820.000
+Sura dau nanh 200ml (loc 6)   27.000   162.000
+Cong tien hang:   2.002.000
+Chiet khau:   -20.000
+Tong thanh toan:   1.982.000
+Nguoi giao hang   Nguoinhan hang
+===== hoa_don_2.jpg (37 khối)
+CONG TY TNHH PHAN PHOI AN PHAT (MAU)
+Kho: 88 Duong Thu Nghiem, Q. Mau, TP.HCM
+PHIEU XUAT KHO KIEM HOA DON
+Ngay01/11/2026   S phiéu: XK-2611-045
+Nguoi mua: Ciura hang tap hoa Binh An
+Ma   Ten hang   DVT   SL   Thanh tien
+MIo1 Mi goitom chua cay   Thung   10   1.150.000
+NM02Nuécmam500ml   Chai   24   696.000
+DA03 Dau an 1 lit   Chai   12   540.000
+DUo4 Duongtrang1kg   G6i   20   460.000
+BN05 Bot ngot 454g   G6i   15   570.000
+Tong cong:   3.416.000
+Da thanh toan:   2.000.000
+Con ng:   1.416.000
+===== hoa_don_mo.jpg (0 khối)
+

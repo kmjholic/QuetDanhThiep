@@ -1,0 +1,13 @@
+Kết quả kiểm tra trên máy của trợ lý (Claude), 04/11/2026 — Dart SDK 3.13.3, mã nguồn Flutter cùng commit với
+Flutter 3.47; mã nguồn thật của google_mlkit_text_recognition 0.17.1, google_mlkit_commons 0.13.0, image_picker 1.2.4,
+shared_preferences 2.5.6, path_provider 2.1.6, flutter_localizations, intl 0.20.3.
+
+1-test-thuan-dart-47.txt      47 kiểm thử Dart thuần: ĐẠT hết (logic quét, lịch sử, cài đặt, chuỗi vi/en, công cụ android/)
+2-dart-analyze.txt            dart analyze toàn bộ lib/, test/, tool/ với API thật của các gói: No issues found
+3-ghep-dong-tren-anh-mau.txt  thuật toán ghép dòng chạy trên toạ độ chữ thật của 2 ảnh mẫu: các hàng hàng hóa đúng thứ tự cột;
+                              ảnh mờ không ra chữ nào (đúng mục đích của mẫu "không có chữ")
+
+CHƯA chạy được ở đây (máy trợ lý không có Flutter engine, Android SDK hay pub.dev):
+  * flutter test test/giao_dien (8 kiểm thử widget cho toàn luồng) — đã qua dart analyze, chưa chạy.
+  * Build APK và chạy ML Kit thật trên điện thoại/máy ảo.
+Trên máy giảng viên: làm theo README mục 1, rồi chạy  flutter test  và thử 4 hóa đơn mẫu.

@@ -1,0 +1,17 @@
+# Flutter / Dart
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+build/
+.idea/
+*.iml
+.vscode/
+
+# Cấu hình riêng của từng máy — KHÔNG đưa lên Git (xem README mục "Cấu hình")
+config/app_config.json
+*.env
+.env*
+android/key.properties
+android/local.properties
+*.jks
+*.keystore
