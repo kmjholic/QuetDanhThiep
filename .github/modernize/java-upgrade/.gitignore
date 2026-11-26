@@ -1,0 +1,27 @@
+cat << 'EOF' > .gitignore
+# Flutter / Dart
+**/build/
+**/.dart_tool/
+**/.flutter-plugins
+**/.flutter-plugins-dependencies
+**/.packages
+**/.pub-preload-cache/
+**/.pub/
+
+# Android / Gradle
+**/android/.gradle/
+**/android/captures/
+**/android/gradlew
+**/android/gradlew.bat
+**/android/local.properties
+**/android/**/GeneratedPluginRegistrant.java
+**/*.jks
+**/*.keystore
+
+# IDE & OS
+.vscode/
+.idea/
+*.iml
+Thumbs.db
+Desktop.ini
+EOF
