@@ -1,0 +1,10 @@
+Dùng trợ lý AI
+
+- **Công cụ:** Claude (Anthropic), dùng qua giao diện chat, làm việc theo từng bước nhỏ với tệp bàn giao `docs/HANDOFF.md` để giữ ngữ cảnh giữa các phiên.
+- **AI hỗ trợ ở:**
+  - Phân tích kiến trúc dự án và lập kế hoạch từng file.
+  - Viết mã Dart cho các phần mới: mô hình, bộ phân tích Regex/heuristic, `TaoVCard`/`DocVCard`, kho dữ liệu, bộ điều khiển, lớp ML Kit/chia sẻ, màn hình, chuỗi song ngữ.
+  - Sửa nhỏ các file gốc (`phu_thuoc.dart`, `main.dart`, `nen_tang.dart`, `man_hinh_chinh.dart`, `man_hinh_cai_dat.dart`) theo nguyên tắc tham số tùy chọn để không làm vỡ test cũ.
+  - Viết test mới và sinh bộ ảnh danh thiếp mẫu (Pillow, mã QR tạo bằng OpenCV).
+  - Soạn tài liệu này.
+- **Giới hạn:** môi trường của AI không chạy được Dart/Flutter. Mọi lệnh `dart analyze`, `flutter test` và việc thử trên thiết bị do **người phát triển tự chạy**, rồi gửi kết quả để AI sửa lỗi. Người phát triển chịu trách nhiệm duyệt, tích hợp và kiểm thử toàn bộ mã.
